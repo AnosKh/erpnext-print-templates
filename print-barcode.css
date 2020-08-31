@@ -1,0 +1,23 @@
+@page :left {
+  margin: 0cm;
+}
+@page :right {
+  margin: 0cm;
+}
+
+@page :top {
+  margin: 0cm;
+}
+.print-format {
+  padding: 15px 0 0 10px !important;
+}
+.main-barcode {
+  padding: 5px 0 0 10px;
+}
+.barcode {
+  border: 1px solid;
+  padding: 3px;
+  display: inline-block;
+  width: 110px;
+  margin: 7px;
+}
