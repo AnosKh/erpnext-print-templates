@@ -1,0 +1,11 @@
+<script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/JsBarcode.all.min.js"></script>
+<div class="main-barcode">
+  {% for i in range(doc.default_print_number_) %}
+      <div class="barcode">
+      <span>{{ doc.item_name }}</span>
+      <img class="price_tag"/>
+      <span>Price: {{ doc.get_formatted("price_list_rate", doc) }}</span>
+    </div>
+  {% endfor %}
+</div>
+<script>JsBarcode(".price_tag", "{{ doc.item_code}}");</script>
